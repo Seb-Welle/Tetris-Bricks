@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border: solid 2px black;
+  margin: 0;
+}
+
+.iBrick div {
+  background-color: cyan;
+}
+
+.iBrick {
+  display: grid;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  box-shadow: inset -5px 2px 2px lightgrey;
+}
+
+.oBrick {
+  display: grid;
+  grid-template-columns: 40px 40px;
+}
+
+.oBrick div {
+  background-color: yellow;
+}
+
+.lBrick {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  height: 130px;
+  width: 80px;
+  justify-content: end;
+}
+
+.lBrick div {
+  background-color: orange;
+}
+
+.sBrick {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: 40px 40px;
+}
+
+.sBrick div {
+  background-color: red;
+}
+
+#s1 {
+  grid-column-start: 2;
+}
